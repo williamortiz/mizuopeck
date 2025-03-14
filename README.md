@@ -1,1 +1,1 @@
-https://github.com/williamortiz/mizuopeck.git
+mizuopeck.com

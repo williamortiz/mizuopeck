@@ -1,0 +1,306 @@
+@charset "UTF-8";
+@import url("../webfonts/Roboto_Regular/stylesheet.css");
+@import url("../webfonts/Roboto_Bold/stylesheet.css");
+/* CSS Document */
+
+html, body {
+	height: 100% !important;
+	font-family: "Roboto Regular"!important;
+	background: #ffffff; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #abc5cb 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, #abc5cb)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #abc5cb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #abc5cb 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #abc5cb 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #ffffff 0%, #abc5cb 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#abc5cb', GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	font-size: 12px !important;
+	line-height: 1.5 !important;
+}
+.navbar-brand {
+	font-size: 2em !important;
+}
+.container_wrapper {
+	display: block !important;
+	background-color: #FFFFFF;
+	width: 65%;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	/* [disabled]max-height: 100vmax !important; */
+	height: auto !important;
+	min-height: 100% !important;
+}
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;  /* need to adjust max-width on all images after resizign browser... Just doing once when page  */
+	border: none;
+}
+.slideshow {
+}
+.slides {
+	list-style-type: none;
+	width: 100%;
+	max-width: 960px;
+	padding: 0;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	/* [disabled]padding-bottom: 40.625%; */
+	height: 44vw;
+	display: block;
+}
+.slides > li {
+	width: 100%;
+	position: absolute;
+	-webkit-transition: left 0.4s ease-in-out;
+	-moz-transition: left 0.4s ease-in-out;
+	-o-transition: left 0.4s ease-in-out;
+	transition: left 0.4s ease-in-out;
+}
+.slides > li:nth-child(1) {
+	left: 0;
+}
+.slides > li:nth-child(2) {
+	left: 100%;
+}
+.slides > li:nth-child(3) {
+	left: 200%;
+}
+.slides > li:nth-child(4) {
+	left: 300%;
+}
+.slide-caption {
+	position: absolute;
+	left: -9999px;
+}
+.slide-nav {
+	float: right;
+	display: block;
+}
+.slides-control{
+	display: block;
+	background-color: #F0F0F0;
+	height: 30px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+
+.reel_padding{
+	padding-top: 50px;
+
+}
+.Resume{
+	font-size: 1em;
+}
+
+.icon_group{
+	display: block;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.icon{
+	margin-left: 4px;
+}
+
+.row_underline{
+	border-left-style: solid;
+	border-left-width: 0px;
+	border-right: 0px solid;
+	border-bottom: 1px solid;
+	border-top: 0px solid;
+}
+.a_b{
+  color: #000;
+}
+
+.table th, .table td {
+     border-top: none !important;
+ }
+
+.th_edit {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	font-family: "Roboto Bold";
+ }
+.center_row{
+	margin-left: auto;
+	margin-right: auto;
+}
+/* iphone----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+html, body {
+	height: 100%;
+	font-family: "Roboto Regular";
+	font-size: 12px;
+	line-height: 1.5;
+	background: #ffffff
+}
+.container_wrapper {
+	display: block;
+	background-color: #FFFFFF;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100vmax;
+	height: auto;
+	min-height: 100%;
+}
+.iphone_align{
+	margin-left: 10px;
+	margin-right: -10px;
+}
+.slides {
+	list-style-type: none;
+	width: 100%;
+	max-width: 960px;
+	padding: 0;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	/* [disabled]padding-bottom: 40.625%; */
+	height: 110vw;
+	display: block;
+}
+.slides-control{
+	display: block;
+	background-color: #F0F0F0;
+	height: 30px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+html, body {
+	height: 100%;
+	font-family: "Roboto Regular";
+	font-size: 12px;
+	line-height: 1.5;
+}
+.container_wrapper {
+	display: block;
+	background-color: #FFFFFF;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100vmax;
+	height: auto;
+	min-height: 100%;
+}
+.iphone_align{
+	margin-left: 10px;
+	margin-right: -10px;
+}
+.slides {
+	list-style-type: none;
+	width: 100%;
+	max-width: 960px;
+	padding: 0;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	/* [disabled]padding-bottom: 40.625%; */
+	height: 50vw;
+	display: block;
+}
+.slides-control{
+	display: block;
+	background-color: #F0F0F0;
+	height: 30px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+html, body {
+	background: #ffffff; /* Old browsers */
+	height: 100%;
+	font-family: "Roboto Regular";
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.container_wrapper {
+	display: block;
+	background-color: #FFFFFF;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100vmax;
+	height: auto;
+	min-height: 100%;
+}
+.iphone_align{
+	margin-left: 10px;
+	margin-right: -10px;
+}
+.slides {
+	list-style-type: none;
+	width: 100%;
+	max-width: 960px;
+	padding: 0;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	/* [disabled]padding-bottom: 40.625%; */
+	height: 110vw;
+	display: block;
+}
+.slides-control{
+	display: block;
+	background-color: #F0F0F0;
+	height: 30px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+.bio{
+	display: block;
+	background-color: #FFFFFF;
+}
+
+}
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+
+.slides-control{
+	display: block;
+	background-color: #F0F0F0;
+	height: 30px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+}
+
+.Resume{
+	font-size: 1.5em !important;
+}
+}

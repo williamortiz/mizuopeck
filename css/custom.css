@@ -1,7 +1,11 @@
 @charset "UTF-8";
-@import url("../webfonts/Roboto_Regular/stylesheet.css");
-@import url("../webfonts/Roboto_Bold/stylesheet.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* CSS Document */
+
+* {
+	font-family: 'Roboto', sans-serif;
+  }
 
 html, body {
 	height: 100% !important;
